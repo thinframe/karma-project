@@ -1,0 +1,25 @@
+{
+    "name": "thinframe/karma-project",
+    "type": "project",
+    "description": "ThinFrame Karma sample project",
+    "require": {
+        "php": ">=5.4.0",
+        "thinframe/karma": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sorin Badea",
+            "email": "sorin.badea91@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
