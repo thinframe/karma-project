@@ -10,6 +10,7 @@
 namespace Acme\DemoApp\Controllers;
 
 use ThinFrame\Karma\Controller\BaseController;
+use ThinFrame\Twig\View;
 
 /**
  * Class DummyController
@@ -34,7 +35,7 @@ class SampleController extends BaseController
      */
     public function indexAction()
     {
-        return 'Homepage of ThinFrame Karma';
+        return new View('AcmeDemoApp:sample.html.twig');
     }
 
     /**

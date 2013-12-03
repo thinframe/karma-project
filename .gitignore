@@ -2,3 +2,4 @@
 /.idea/
 /app/config/parameters.yml
 *.log
+/bin/*

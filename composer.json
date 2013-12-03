@@ -4,7 +4,8 @@
     "description": "ThinFrame Karma sample project",
     "require": {
         "php": ">=5.4.0",
-        "thinframe/karma": "dev-master"
+        "thinframe/karma": "dev-master",
+        "thinframe/twig-application": "dev-master"
     },
     "license": "MIT",
     "authors": [

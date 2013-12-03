@@ -12,6 +12,7 @@ namespace Acme\DemoApp;
 use ThinFrame\Applications\AbstractApplication;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 use ThinFrame\Karma\KarmaApplication;
+use ThinFrame\Twig\TwigApplication;
 
 /**
  * Class DemoApp
@@ -63,7 +64,8 @@ class DemoApplication extends AbstractApplication
     protected function getParentApplications()
     {
         return [
-            new KarmaApplication()
+            new KarmaApplication(),
+            new TwigApplication()
         ];
     }
 
@@ -75,7 +77,8 @@ class DemoApplication extends AbstractApplication
     protected function metaData()
     {
         return [
-            'path_autoload' => 'Controllers/'
+            'path_autoload' => 'Controllers/',
+            'views_path'    => 'Views/'
         ];
     }
 }

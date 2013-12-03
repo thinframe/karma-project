@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "067bebc4deb44aec2f89a0bc73c15132",
+    "hash": "d43e888718376c948ab1098968162206",
     "packages": [
         {
             "name": "evenement/evenement",
@@ -457,12 +457,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DependencyInjection.git",
-                "reference": "6482bdb5b265514489750877867abeda5d34bdd7"
+                "reference": "7dc5be9f16e653a6b453824206fdae4cfda88f52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/6482bdb5b265514489750877867abeda5d34bdd7",
-                "reference": "6482bdb5b265514489750877867abeda5d34bdd7",
+                "url": "https://api.github.com/repos/symfony/DependencyInjection/zipball/7dc5be9f16e653a6b453824206fdae4cfda88f52",
+                "reference": "7dc5be9f16e653a6b453824206fdae4cfda88f52",
                 "shasum": ""
             },
             "require": {
@@ -505,7 +505,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "http://symfony.com",
-            "time": "2013-11-26 16:42:52"
+            "time": "2013-12-03 14:52:29"
         },
         {
             "name": "symfony/filesystem",
@@ -758,12 +758,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/command_line.git",
-                "reference": "947f2fcb8ad2d57b1a896615392c7de9ffa04371"
+                "reference": "2b3c9a6f08cba958ea3173a0d7cc9df41e0e9022"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/command_line/zipball/947f2fcb8ad2d57b1a896615392c7de9ffa04371",
-                "reference": "947f2fcb8ad2d57b1a896615392c7de9ffa04371",
+                "url": "https://api.github.com/repos/thinframe/command_line/zipball/2b3c9a6f08cba958ea3173a0d7cc9df41e0e9022",
+                "reference": "2b3c9a6f08cba958ea3173a0d7cc9df41e0e9022",
                 "shasum": ""
             },
             "require": {
@@ -801,7 +801,7 @@
                 "command line",
                 "thinframe"
             ],
-            "time": "2013-11-27 20:16:23"
+            "time": "2013-12-03 18:20:38"
         },
         {
             "name": "thinframe/events",
@@ -945,12 +945,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/karma.git",
-                "reference": "51efbee844d939f43a77da78db455fd27469edfd"
+                "reference": "95a0dc4aba647f9c8a60934d28998631ae9cffc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/karma/zipball/51efbee844d939f43a77da78db455fd27469edfd",
-                "reference": "51efbee844d939f43a77da78db455fd27469edfd",
+                "url": "https://api.github.com/repos/thinframe/karma/zipball/95a0dc4aba647f9c8a60934d28998631ae9cffc7",
+                "reference": "95a0dc4aba647f9c8a60934d28998631ae9cffc7",
                 "shasum": ""
             },
             "require": {
@@ -965,9 +965,6 @@
                 "thinframe/pcntl": "dev-master",
                 "thinframe/server": "dev-master"
             },
-            "bin": [
-                "bin/thinframe-karma.php"
-            ],
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -994,7 +991,7 @@
                 "php",
                 "thinframe"
             ],
-            "time": "2013-12-02 20:44:30"
+            "time": "2013-12-03 17:14:19"
         },
         {
             "name": "thinframe/pcntl",
@@ -1002,16 +999,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/pcntl.git",
-                "reference": "819e9ebcc91f534687733e0cada7922a496a5f91"
+                "reference": "b8d097b09a6754e64eb1dfa68db97708726cba7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/pcntl/zipball/819e9ebcc91f534687733e0cada7922a496a5f91",
-                "reference": "819e9ebcc91f534687733e0cada7922a496a5f91",
+                "url": "https://api.github.com/repos/thinframe/pcntl/zipball/b8d097b09a6754e64eb1dfa68db97708726cba7f",
+                "reference": "b8d097b09a6754e64eb1dfa68db97708726cba7f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
+                "thinframe/events": "dev-master",
                 "thinframe/foundation": "dev-master"
             },
             "type": "library",
@@ -1037,7 +1035,7 @@
                 "pcntl",
                 "thinframe"
             ],
-            "time": "2013-11-11 19:38:46"
+            "time": "2013-12-03 09:54:18"
         },
         {
             "name": "thinframe/server",
@@ -1045,12 +1043,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/server.git",
-                "reference": "50d7ef020f4e7e2b18c263d6ad2e6ea83c7f0ca5"
+                "reference": "5e768b014864e9766a5927f12cc244ecbc9af9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/server/zipball/50d7ef020f4e7e2b18c263d6ad2e6ea83c7f0ca5",
-                "reference": "50d7ef020f4e7e2b18c263d6ad2e6ea83c7f0ca5",
+                "url": "https://api.github.com/repos/thinframe/server/zipball/5e768b014864e9766a5927f12cc244ecbc9af9f8",
+                "reference": "5e768b014864e9766a5927f12cc244ecbc9af9f8",
                 "shasum": ""
             },
             "require": {
@@ -1086,7 +1084,100 @@
                 "server",
                 "thinframe"
             ],
-            "time": "2013-11-28 04:18:25"
+            "time": "2013-12-03 16:42:40"
+        },
+        {
+            "name": "thinframe/twig-application",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thinframe/twig-application.git",
+                "reference": "30bc84f6a2062507dcee68d4007b7160a8870cd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thinframe/twig-application/zipball/30bc84f6a2062507dcee68d4007b7160a8870cd1",
+                "reference": "30bc84f6a2062507dcee68d4007b7160a8870cd1",
+                "shasum": ""
+            },
+            "require": {
+                "twig/twig": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sorin Badea",
+                    "email": "sorin.badea91@gmail.com",
+                    "homepage": "http://sorinbadea.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Twig View for Karma Framework",
+            "homepage": "http://thinframe.net",
+            "keywords": [
+                "karma",
+                "thinframe",
+                "twig"
+            ],
+            "time": "2013-12-03 19:03:57"
+        },
+        {
+            "name": "twig/twig",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot/Twig.git",
+                "reference": "fcecb284f0c3d8f04ea282b70363a2a2023570d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/fcecb284f0c3d8f04ea282b70363a2a2023570d9",
+                "reference": "fcecb284f0c3d8f04ea282b70363a2a2023570d9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2013-12-03 14:16:16"
         }
     ],
     "packages-dev": [
@@ -1097,11 +1188,12 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "thinframe/karma": 20
+        "thinframe/karma": 20,
+        "thinframe/twig-application": 20
     },
-    "platform": [
-
-    ],
+    "platform": {
+        "php": ">=5.4.0"
+    },
     "platform-dev": [
 
     ]
