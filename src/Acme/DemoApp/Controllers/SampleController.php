@@ -46,6 +46,7 @@ class SampleController extends BaseController
      */
     public function contactAction()
     {
+        throw new \Exception('Bla bla bla');
         return 'Send me a email at sorin.badea91@gmailcom';
     }
 }
