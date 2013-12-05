@@ -19,6 +19,13 @@ $karmaApplication = new Application();
 
 $karmaContainer = $karmaApplication->getApplicationContainer();
 
+if (getenv('THINFRAME_ENVIRONMENT')) {
+    $environment = $karmaContainer->get('thinframe.karma.environment');
+    /** @var $environment \ThinFrame\Karma\Constants\Environment */
+    $environment->setValue(getenv('THINFRAME_ENVIRONMENT'));
+}
+
+
 $dispatcher = $karmaContainer->get('thinframe.events.dispatcher');
 /** @var $dispatcher \ThinFrame\Events\Dispatcher */
 
