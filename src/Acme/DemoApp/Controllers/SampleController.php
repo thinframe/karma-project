@@ -35,7 +35,14 @@ class SampleController extends BaseController
      */
     public function indexAction()
     {
-        return new View('AcmeDemoApp:sample.html.twig');
+        return new View('AcmeDemoApp:default.html.twig', [
+            'controller_location' => __FILE__,
+            'controller_action'   => __FUNCTION__,
+            'path'                => $this->request->getPath(),
+            'remote_ip'           => $this->request->getRemoteIp(),
+            'memory_usage'        => memory_get_usage() / 1024,
+            'real_memory_usage'   => memory_get_usage(true) / 1024
+        ]);
     }
 
     /**
@@ -46,7 +53,6 @@ class SampleController extends BaseController
      */
     public function contactAction()
     {
-        throw new \Exception('Bla bla bla');
         return 'Send me a email at sorin.badea91@gmailcom';
     }
 }

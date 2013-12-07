@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Karma Project</title>
+    <link href='//fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        * {
+            background-color: #1eb999;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        header h1 {
+            color: #f5f5f5;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #038976;
+        }
+
+        section table {
+            color: #f5f5f5;
+            font-size: 18px;
+            margin: 0px auto;
+        }
+
+        section table tr td:nth-child(1) {
+            font-weight: bold;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>This is the default page of your Karma project</h1>
+</header>
+<section>
+    <h2>Controller details</h2>
+    <table>
+        <tr>
+            <td>Location:</td>
+            <td>{{ controller_location }}</td>
+        </tr>
+        <tr>
+            <td>Action:</td>
+            <td>{{ controller_action }}</td>
+        </tr>
+    </table>
+</section>
+<section>
+    <h2>Server details</h2>
+    <table>
+        <tr>
+            <td>Inbound request from:</td>
+            <td>{{ remote_ip }}</td>
+        </tr>
+        <tr>
+            <td>Current path:</td>
+            <td>{{ path }}</td>
+        </tr>
+        <tr>
+            <td>Memory usage:</td>
+            <td>{{ memory_usage }} Kb</td>
+        </tr>
+        <tr>
+            <td>Real memory usage:</td>
+            <td>{{ real_memory_usage }} Kb</td>
+        </tr>
+    </table>
+</section>
+</body>
+</html>
