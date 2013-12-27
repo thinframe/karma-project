@@ -1,0 +1,9 @@
+thinframe.server:
+    listen:
+        port: 1337
+        host: 192.168.56.168
+
+twig:
+    error_views:
+        404: AcmeDemoApp:not_found.html.twig
+        500: AcmeDemoApp:internal_server_error.html.twig

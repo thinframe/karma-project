@@ -42,7 +42,8 @@ class DemoApplication extends AbstractApplication
     public function getConfigurationFiles()
     {
         return [
-            '../../../app/config/parameters.yml'
+            '../../../app/config/parameters.yml',
+            '../../../app/config/config.yml'
         ];
     }
 
@@ -77,8 +78,8 @@ class DemoApplication extends AbstractApplication
     protected function metaData()
     {
         return [
-            'path_autoload' => 'Controllers/',
-            'views_path'    => 'Views/'
+            'controllers' => ['Controllers/'],
+            'views'       => 'Views/'
         ];
     }
 }

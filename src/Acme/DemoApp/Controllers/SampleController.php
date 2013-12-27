@@ -9,8 +9,8 @@
 
 namespace Acme\DemoApp\Controllers;
 
-use ThinFrame\Karma\Controller\BaseController;
-use ThinFrame\Twig\View;
+use ThinFrame\Karma\ViewController\AbstractController;
+use ThinFrame\Twig\TwigView;
 
 /**
  * Class DummyController
@@ -19,7 +19,7 @@ use ThinFrame\Twig\View;
  * @see     http://symfony.com/doc/current/components/routing/introduction.html for routing paramters details
  * @since   0.1
  */
-class SampleController extends BaseController
+class SampleController extends AbstractController
 {
     /**
      * @Route {
@@ -35,7 +35,7 @@ class SampleController extends BaseController
      */
     public function indexAction()
     {
-        return new View('AcmeDemoApp:default.html.twig', [
+        return new TwigView('AcmeDemoApp:default.html.twig', [
             'controller_location' => __FILE__,
             'controller_action'   => __FUNCTION__,
             'path'                => $this->request->getPath(),
@@ -53,6 +53,7 @@ class SampleController extends BaseController
      */
     public function contactAction()
     {
+        throw new \Exception('bla bla bla');
         return 'Send me a email at sorin.badea91@gmailcom';
     }
 }
