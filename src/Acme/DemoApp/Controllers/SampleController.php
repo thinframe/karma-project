@@ -53,7 +53,6 @@ class SampleController extends AbstractController
      */
     public function contactAction()
     {
-        throw new \Exception('bla bla bla');
-        return 'Send me a email at sorin.badea91@gmailcom';
+        return 'Send me a email at sorin.badea91@gmail.com';
     }
 }

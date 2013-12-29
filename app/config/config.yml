@@ -1,7 +1,7 @@
 thinframe.server:
     listen:
         port: 1337
-        host: 192.168.56.168
+        host: 127.0.0.1
 
 twig:
     error_views:

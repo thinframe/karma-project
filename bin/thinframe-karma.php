@@ -2,7 +2,7 @@
 
 use Acme\DemoApp\DemoApplication as Application;
 
-declare(ticks = 2);
+declare(ticks = 1);
 
 /**
  * Karma root directory
