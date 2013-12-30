@@ -79,7 +79,8 @@ class DemoApplication extends AbstractApplication
     {
         return [
             'controllers' => ['Controllers/'],
-            'views'       => 'Views/'
+            'views'       => 'Views/',
+            'assets'      => '../../../app/assets/',
         ];
     }
 }
