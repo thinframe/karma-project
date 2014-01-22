@@ -1,1 +1,2 @@
-#ThinFrame Karma Project
+#Karma Project
+Experimental PHP Framework & HTTP server
