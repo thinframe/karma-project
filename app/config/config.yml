@@ -8,3 +8,7 @@ twig:
         404: AcmeDemoApp:not_found.html.twig
         500: AcmeDemoApp:internal_server_error.html.twig
 
+#TODO: implement file handler
+thinframe.logger:
+    handlers:
+      - 'thinframe.logger.handlers.null'
