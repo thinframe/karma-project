@@ -3,4 +3,5 @@
 *.log
 *.pid
 /bin/*
-composer.lock
+app/config/parameters.yml
+*.sandbox.php

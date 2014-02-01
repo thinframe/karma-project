@@ -5,7 +5,8 @@
     "require": {
         "php": ">=5.4.0",
         "thinframe/karma": "dev-master",
-        "thinframe/twig-application": "dev-master"
+        "thinframe/twig-application": "dev-master",
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "license": "MIT",
     "authors": [
@@ -22,5 +23,18 @@
     },
     "config": {
         "bin-dir": "bin"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ]
+    },
+    "extra": {
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
     }
 }
