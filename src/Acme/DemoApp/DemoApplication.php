@@ -12,6 +12,7 @@ namespace Acme\DemoApp;
 use ThinFrame\Applications\AbstractApplication;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 use ThinFrame\Karma\KarmaApplication;
+use ThinFrame\Profiler\ProfilerApplication;
 use ThinFrame\Twig\TwigApplication;
 
 /**
@@ -66,7 +67,8 @@ class DemoApplication extends AbstractApplication
     {
         return [
             new KarmaApplication(),
-            new TwigApplication()
+            new TwigApplication(),
+            new ProfilerApplication()
         ];
     }
 

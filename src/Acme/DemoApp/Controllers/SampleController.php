@@ -10,6 +10,7 @@
 namespace Acme\DemoApp\Controllers;
 
 use ThinFrame\Karma\ViewController\AbstractController;
+use ThinFrame\Karma\ViewController\JsonView;
 use ThinFrame\Twig\TwigView;
 
 /**
@@ -53,6 +54,6 @@ class SampleController extends AbstractController
      */
     public function contactAction()
     {
-        return 'Send me a email at sorin.badea91@gmail.com';
+        return "Send me an email at sorin.badea91@gmail.com";
     }
 }

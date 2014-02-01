@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Karma Project</title>
+    <link href='//fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <style type="text/css">
+        * {
+            background-color: #1eb999;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        header h1 {
+            color: #f5f5f5;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #memory_chart {
+            width: 900px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
+    <script type="text/javascript">
+        var data = [
+            [ "Time", 'Memory Usage', 'Real Memory Usage', 'Peak Memory Usage', 'Real Peak Memory Usage']
+        ];
+        var options = {
+            title: 'Memory usage',
+            hAxis: {title: 'Time'},
+            vAxis: {title: 'Memory'}
+        };
+        var memoryChart;
+
+        google.load("visualization", "1", {packages: ["corechart"]});
+        google.setOnLoadCallback(initializeMemoryChart);
+
+        function initializeMemoryChart() {
+
+
+            window.memoryChart = new google.visualization.AreaChart(document.getElementById('memory_chart'));
+
+            setInterval(poolServer, 500);
+        }
+
+        function drawMemoryChart(serverData) {
+
+            window.data.push([new Date(serverData.time * 1000), serverData.memory_usage, serverData.real_memory_usage, serverData.memory_peak_usage, serverData.real_memory_peak_usage]);
+
+            var dataTable = google.visualization.arrayToDataTable(window.data);
+
+            window.memoryChart.draw(dataTable, window.options);
+        }
+
+        function poolServer() {
+            $.get("_profiler/memory", function (serverData) {
+                drawMemoryChart(serverData);
+            }, "json");
+        }
+    </script>
+</head>
+<body>
+<header>
+    <h1>Karma Memory Profiler</h1>
+</header>
+<section>
+    <div id='memory_chart'></div>
+</section>
+</body>
+</html>
