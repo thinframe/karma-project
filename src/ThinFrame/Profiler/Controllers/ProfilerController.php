@@ -28,10 +28,10 @@ class ProfilerController extends AbstractController
     {
         return json_encode(
             [
-                'memory_usage'           => memory_get_usage(),
-                'real_memory_usage'      => memory_get_usage(true),
-                'memory_peak_usage'      => memory_get_peak_usage(),
-                'real_memory_peak_usage' => memory_get_peak_usage(true),
+                'memory_usage'           => memory_get_usage() / (1024 * 1024),
+                'real_memory_usage'      => memory_get_usage(true) / (1024 * 1024),
+                'memory_peak_usage'      => memory_get_peak_usage() / (1024 * 1024),
+                'real_memory_peak_usage' => memory_get_peak_usage(true) / (1024 * 1024),
                 'time'                   => time()
             ]
         );
