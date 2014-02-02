@@ -12,3 +12,4 @@ twig:
 thinframe.logger:
     handlers:
       - 'thinframe.logger.handlers.null'
+      - 'thinframe.karma.logger_file_handler'
