@@ -12,6 +12,7 @@ namespace Acme\DemoApp;
 use PhpCollection\Map;
 use ThinFrame\Applications\AbstractApplication;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
+use ThinFrame\Karma\Environment;
 use ThinFrame\Karma\KarmaApplication;
 
 /**
@@ -22,6 +23,26 @@ use ThinFrame\Karma\KarmaApplication;
  */
 class DemoApplication extends AbstractApplication
 {
+    /**
+     * @var Environment
+     */
+    private $environment;
+
+    /**
+     * {@inheritdoc}
+     */
+    function __construct()
+    {
+        parent::__construct();
+
+        if (getenv('THINFRAME_ENVIRONMENT')) {
+            $this->environment = new Environment(getenv('THINFRAME_ENVIRONMENT'));
+        } else {
+            $this->environment = new Environment(Environment::PRODUCTION);
+        }
+    }
+
+
     /**
      * Get application name
      *
@@ -52,7 +73,7 @@ class DemoApplication extends AbstractApplication
         $configurator->addResources(
             [
                 '../../../app/config/parameters.yml',
-                '../../../app/config/config.yml'
+                '../../../app/config/' . $this->environment . '_config.yml'
             ]
         );
     }
@@ -68,5 +89,6 @@ class DemoApplication extends AbstractApplication
         $metadata->set('controllers', ['Controllers/']);
         $metadata->set('views', 'Views/');
         $metadata->set('assets', '../../../app/assets/');
+        $metadata->set('environment', $this->environment);
     }
 }
