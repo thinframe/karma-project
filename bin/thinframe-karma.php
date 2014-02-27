@@ -17,19 +17,11 @@ require_once KARMA_ROOT . 'vendor/autoload.php';
 
 $karmaApplication = new Application();
 
-$karmaContainer = $karmaApplication->getApplicationContainer();
+$karmaContainer = $karmaApplication->make()->getContainer();
 
-if (getenv('THINFRAME_ENVIRONMENT')) {
-    $environment = $karmaContainer->get('thinframe.karma.environment');
-    /** @var $environment \ThinFrame\Karma\Constants\Environment */
-    $environment->setValue(getenv('THINFRAME_ENVIRONMENT'));
-}
-
-
-$dispatcher = $karmaContainer->get('thinframe.events.dispatcher');
+$dispatcher = $karmaContainer->get('events.dispatcher');
 /** @var $dispatcher \ThinFrame\Events\Dispatcher */
 
 $dispatcher->trigger(
-    new \ThinFrame\Events\SimpleEvent(
-        \ThinFrame\Karma\KarmaApplication::POWER_UP_EVENT_ID, ['application' => $karmaApplication])
+    new \ThinFrame\Events\SimpleEvent('power_up', ['application' => $karmaApplication])
 );

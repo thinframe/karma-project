@@ -9,11 +9,10 @@
 
 namespace Acme\DemoApp;
 
+use PhpCollection\Map;
 use ThinFrame\Applications\AbstractApplication;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 use ThinFrame\Karma\KarmaApplication;
-use ThinFrame\Profiler\ProfilerApplication;
-use ThinFrame\Twig\TwigApplication;
 
 /**
  * Class DemoApp
@@ -24,65 +23,50 @@ use ThinFrame\Twig\TwigApplication;
 class DemoApplication extends AbstractApplication
 {
     /**
-     * initialize configurator
-     *
-     * @param ContainerConfigurator $configurator
-     *
-     * @return mixed
-     */
-    public function initializeConfigurator(ContainerConfigurator $configurator)
-    {
-        //noop
-    }
-
-    /**
-     * Get configuration files
-     *
-     * @return mixed
-     */
-    public function getConfigurationFiles()
-    {
-        return [
-            '../../../app/config/parameters.yml',
-            '../../../app/config/config.yml'
-        ];
-    }
-
-    /**
      * Get application name
      *
      * @return string
      */
-    public function getApplicationName()
+    public function getName()
     {
-        return 'AcmeDemoApp';
+        return $this->reflector->getShortName();
     }
 
     /**
-     * Get parent applications
+     * Get application parents
      *
      * @return AbstractApplication[]
      */
-    protected function getParentApplications()
+    public function getParents()
     {
-        return [
-            new KarmaApplication(),
-            new TwigApplication(),
-            new ProfilerApplication()
-        ];
+        return [new KarmaApplication()];
     }
 
     /**
-     * Application metaData
+     * Set different options for the container configurator
      *
-     * @return array
+     * @param ContainerConfigurator $configurator
      */
-    protected function metaData()
+    protected function setConfiguration(ContainerConfigurator $configurator)
     {
-        return [
-            'controllers' => ['Controllers/'],
-            'views'       => 'Views/',
-            'assets'      => '../../../app/assets/',
-        ];
+        $configurator->addResources(
+            [
+                '../../../app/config/parameters.yml',
+                '../../../app/config/config.yml'
+            ]
+        );
+    }
+
+    /**
+     * Set application metadata
+     *
+     * @param Map $metadata
+     *
+     */
+    protected function setMetadata(Map $metadata)
+    {
+        $metadata->set('controllers', ['Controllers/']);
+        $metadata->set('views', 'Views/');
+        $metadata->set('assets', '../../../app/assets/');
     }
 }

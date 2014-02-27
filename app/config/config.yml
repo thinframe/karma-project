@@ -1,15 +1,3 @@
-thinframe.server:
-    listen:
-        port: 1337
-        host: 127.0.0.1
-
-twig:
-    error_views:
-        404: AcmeDemoApp:not_found.html.twig
-        500: AcmeDemoApp:internal_server_error.html.twig
-
-#TODO: implement file handler
-thinframe.logger:
-    handlers:
-      - 'thinframe.logger.handlers.null'
-      - 'thinframe.karma.logger_file_handler'
+server:
+    port: 1337
+    host: 127.0.0.1
