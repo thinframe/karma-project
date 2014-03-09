@@ -6,3 +6,6 @@ parameters:
 
     thinframe.server.port: 1337
     thinframe.server.host: '127.0.0.1'
+
+    thinframe.server.output_file: 'app/logs/server_output.log'
+    thinframe.server.error_file: 'app/logs/server_error.log'

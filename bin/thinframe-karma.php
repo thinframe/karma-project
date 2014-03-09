@@ -1,6 +1,8 @@
 <?php
 
 use Acme\DemoApp\DemoApplication as Application;
+use ThinFrame\Events\SimpleEvent;
+use ThinFrame\Karma\Events;
 
 declare(ticks = 1);
 
@@ -23,5 +25,9 @@ $dispatcher = $karmaContainer->get('events.dispatcher');
 /** @var $dispatcher \ThinFrame\Events\Dispatcher */
 
 $dispatcher->trigger(
-    new \ThinFrame\Events\SimpleEvent('power_up', ['application' => $karmaApplication])
+    new SimpleEvent(
+        Events::POWER_UP,
+        [
+            'application' => $karmaApplication
+        ])
 );

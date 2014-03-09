@@ -1,3 +1,8 @@
 server:
     port: 1337
     host: 127.0.0.1
+
+monolog:
+    logger_name: 'thinframe'
+    logger_service: 'logger'
+    handlers:
