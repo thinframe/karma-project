@@ -40,6 +40,8 @@ class DemoApplication extends AbstractApplication
         } else {
             $this->environment = new Environment(Environment::PRODUCTION);
         }
+
+        $this->container->setParameter('environment', $this->environment->__toString());
     }
 
 

@@ -3,6 +3,5 @@ server:
     host: 127.0.0.1
 
 monolog:
-    logger_name: 'thinframe'
-    logger_service: 'logger'
     handlers:
+    - { service: 'karma.logger.file_handler.development' }
