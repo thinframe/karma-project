@@ -1,6 +1,7 @@
 monolog:
     handlers:
-    - { service: 'karma.logger.file_handler' }
+      - { service: 'karma.logger.file_handler' }
+    processors:
 
 server:
     port: 1337

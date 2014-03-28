@@ -1,1 +1,5 @@
 #here will be dropped development configuration
+monolog:
+    processors:
+        - { service: 'karma.logger.memory_usage_processor' }
+        - { service: 'karma.logger.memory_peak_usage_processor' }

@@ -1451,12 +1451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/karma.git",
-                "reference": "26cf3c1c9028ef76f6a7a7f2b20b72afe613e71e"
+                "reference": "836ffec5c4926576a59f6152ada3ca603def1095"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/karma/zipball/26cf3c1c9028ef76f6a7a7f2b20b72afe613e71e",
-                "reference": "26cf3c1c9028ef76f6a7a7f2b20b72afe613e71e",
+                "url": "https://api.github.com/repos/thinframe/karma/zipball/836ffec5c4926576a59f6152ada3ca603def1095",
+                "reference": "836ffec5c4926576a59f6152ada3ca603def1095",
                 "shasum": ""
             },
             "require": {
@@ -1499,7 +1499,7 @@
                 "php",
                 "thinframe"
             ],
-            "time": "2014-03-27 21:27:22"
+            "time": "2014-03-28 14:30:27"
         },
         {
             "name": "thinframe/monolog",
