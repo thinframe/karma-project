@@ -75,7 +75,8 @@ class DemoApplication extends AbstractApplication
         $configurator->addResources(
             [
                 '../../../app/config/parameters.yml',
-                '../../../app/config/' . $this->environment . '_config.yml'
+                '../../../app/config/config.yml',
+                '../../../app/config/config_' . $this->environment . '.yml',
             ]
         );
     }

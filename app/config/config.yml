@@ -1,0 +1,7 @@
+monolog:
+    handlers:
+    - { service: 'karma.logger.file_handler' }
+
+server:
+    port: 1337
+    host: 127.0.0.1

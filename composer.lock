@@ -106,12 +106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "e3d1ad7ff7b417cb98d6d860f7040ba5bb75cb0d"
+                "reference": "a0731ddb5f1d37619d5b50567eb60e585510464b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/e3d1ad7ff7b417cb98d6d860f7040ba5bb75cb0d",
-                "reference": "e3d1ad7ff7b417cb98d6d860f7040ba5bb75cb0d",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/a0731ddb5f1d37619d5b50567eb60e585510464b",
+                "reference": "a0731ddb5f1d37619d5b50567eb60e585510464b",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,10 @@
             "autoload": {
                 "psr-0": {
                     "Whoops": "src/"
-                }
+                },
+                "classmap": [
+                    "src/deprecated"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -154,7 +157,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-03-03 12:19:05"
+            "time": "2014-03-18 14:37:13"
         },
         {
             "name": "guzzle/parser",
@@ -207,12 +210,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Incenteev/ParameterHandler.git",
-                "reference": "e4e191b96fb8af9cde738f439ec7fe69023e45f9"
+                "reference": "f6b98615a403a0f684eb15581ed9f6e93709169d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Incenteev/ParameterHandler/zipball/e4e191b96fb8af9cde738f439ec7fe69023e45f9",
-                "reference": "e4e191b96fb8af9cde738f439ec7fe69023e45f9",
+                "url": "https://api.github.com/repos/Incenteev/ParameterHandler/zipball/f6b98615a403a0f684eb15581ed9f6e93709169d",
+                "reference": "f6b98615a403a0f684eb15581ed9f6e93709169d",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +253,7 @@
             "keywords": [
                 "parameters management"
             ],
-            "time": "2014-02-25 11:14:12"
+            "time": "2014-03-11 08:44:13"
         },
         {
             "name": "monolog/monolog",
@@ -258,12 +261,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "dc75a998d83ebb285b94b1a6fd96644b457ed33c"
+                "reference": "4cf49e5496857532f4ca4bbb69d1eee591b88234"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/dc75a998d83ebb285b94b1a6fd96644b457ed33c",
-                "reference": "dc75a998d83ebb285b94b1a6fd96644b457ed33c",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4cf49e5496857532f4ca4bbb69d1eee591b88234",
+                "reference": "4cf49e5496857532f4ca4bbb69d1eee591b88234",
                 "shasum": ""
             },
             "require": {
@@ -291,7 +294,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev"
+                    "dev-master": "1.8.x-dev"
                 }
             },
             "autoload": {
@@ -318,7 +321,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-03-09 20:51:48"
+            "time": "2014-03-26 11:12:35"
         },
         {
             "name": "nikic/php-parser",
@@ -326,12 +329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "118f28344daf154e47e73e79779a60bc7430a40f"
+                "reference": "8429157ab5478408606ee29e118c5f7db74c8afe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/118f28344daf154e47e73e79779a60bc7430a40f",
-                "reference": "118f28344daf154e47e73e79779a60bc7430a40f",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8429157ab5478408606ee29e118c5f7db74c8afe",
+                "reference": "8429157ab5478408606ee29e118c5f7db74c8afe",
                 "shasum": ""
             },
             "require": {
@@ -363,7 +366,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2014-02-12 19:19:48"
+            "time": "2014-03-27 11:51:13"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -513,12 +516,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "1fc3294b7c1cbd5e89738bc2ec40b53c59551c0a"
+                "reference": "636ea9b98ae228fadc3b500cb858eef0c6b63194"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/1fc3294b7c1cbd5e89738bc2ec40b53c59551c0a",
-                "reference": "1fc3294b7c1cbd5e89738bc2ec40b53c59551c0a",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/636ea9b98ae228fadc3b500cb858eef0c6b63194",
+                "reference": "636ea9b98ae228fadc3b500cb858eef0c6b63194",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +569,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2014-03-08 15:57:43"
+            "time": "2014-03-18 17:26:21"
         },
         {
             "name": "react/promise",
@@ -623,12 +626,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/react.git",
-                "reference": "fc844efdabe49eb1455c9aeb859c4355c6939b36"
+                "reference": "fb15cab25c244e33c7e2d2027f895efe94523d2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/react/zipball/fc844efdabe49eb1455c9aeb859c4355c6939b36",
-                "reference": "fc844efdabe49eb1455c9aeb859c4355c6939b36",
+                "url": "https://api.github.com/repos/reactphp/react/zipball/fb15cab25c244e33c7e2d2027f895efe94523d2c",
+                "reference": "fb15cab25c244e33c7e2d2027f895efe94523d2c",
                 "shasum": ""
             },
             "require": {
@@ -675,7 +678,7 @@
                 "event-loop",
                 "reactor"
             ],
-            "time": "2014-02-28 14:02:44"
+            "time": "2014-03-10 23:19:46"
         },
         {
             "name": "symfony/config",
@@ -734,21 +737,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "563254c27e37efb65aae587286602ae6f5f18acd"
+                "reference": "ab9359cbf100259625c756b57c578eea15b3c464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/563254c27e37efb65aae587286602ae6f5f18acd",
-                "reference": "563254c27e37efb65aae587286602ae6f5f18acd",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ab9359cbf100259625c756b57c578eea15b3c464",
+                "reference": "ab9359cbf100259625c756b57c578eea15b3c464",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
+                "psr/log": "~1.0",
                 "symfony/event-dispatcher": "~2.1"
             },
             "suggest": {
+                "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": ""
             },
             "type": "library",
@@ -780,7 +785,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-03-03 13:53:19"
+            "time": "2014-03-19 15:49:37"
         },
         {
             "name": "symfony/dependency-injection",
@@ -848,12 +853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "e81f1b30eb9748c3f8e0de3a92ea210845cff0a9"
+                "reference": "fe66eed49c7bbfc312978ef0f86e490127a345b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/e81f1b30eb9748c3f8e0de3a92ea210845cff0a9",
-                "reference": "e81f1b30eb9748c3f8e0de3a92ea210845cff0a9",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/fe66eed49c7bbfc312978ef0f86e490127a345b2",
+                "reference": "fe66eed49c7bbfc312978ef0f86e490127a345b2",
                 "shasum": ""
             },
             "require": {
@@ -877,7 +882,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -886,7 +893,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:29:57"
+            "time": "2014-03-26 12:01:00"
         },
         {
             "name": "symfony/finder",
@@ -1115,12 +1122,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/applications.git",
-                "reference": "b2b7a2e9fdd5103f815d51dd3faba4ca7aea53cd"
+                "reference": "d18f05868c6fc2445b729d1688d0c595970a8345"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/applications/zipball/b2b7a2e9fdd5103f815d51dd3faba4ca7aea53cd",
-                "reference": "b2b7a2e9fdd5103f815d51dd3faba4ca7aea53cd",
+                "url": "https://api.github.com/repos/thinframe/applications/zipball/d18f05868c6fc2445b729d1688d0c595970a8345",
+                "reference": "d18f05868c6fc2445b729d1688d0c595970a8345",
                 "shasum": ""
             },
             "require": {
@@ -1161,7 +1168,7 @@
                 "ecosystem",
                 "thinframe"
             ],
-            "time": "2014-03-09 16:06:40"
+            "time": "2014-03-27 21:26:16"
         },
         {
             "name": "thinframe/command_line",
@@ -1169,12 +1176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/command_line.git",
-                "reference": "c08ea782310eb46922cacee0772d7721a2f77cdc"
+                "reference": "fc4cda3f7b67ccc709095c8e892a7c4d8986ca47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/command_line/zipball/c08ea782310eb46922cacee0772d7721a2f77cdc",
-                "reference": "c08ea782310eb46922cacee0772d7721a2f77cdc",
+                "url": "https://api.github.com/repos/thinframe/command_line/zipball/fc4cda3f7b67ccc709095c8e892a7c4d8986ca47",
+                "reference": "fc4cda3f7b67ccc709095c8e892a7c4d8986ca47",
                 "shasum": ""
             },
             "require": {
@@ -1220,7 +1227,7 @@
                 "command line",
                 "thinframe"
             ],
-            "time": "2014-03-09 21:53:51"
+            "time": "2014-03-27 20:47:17"
         },
         {
             "name": "thinframe/events",
@@ -1444,12 +1451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/karma.git",
-                "reference": "6df53c0e4984ac1eb9c3c590c43eccb34d0c7431"
+                "reference": "26cf3c1c9028ef76f6a7a7f2b20b72afe613e71e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/karma/zipball/6df53c0e4984ac1eb9c3c590c43eccb34d0c7431",
-                "reference": "6df53c0e4984ac1eb9c3c590c43eccb34d0c7431",
+                "url": "https://api.github.com/repos/thinframe/karma/zipball/26cf3c1c9028ef76f6a7a7f2b20b72afe613e71e",
+                "reference": "26cf3c1c9028ef76f6a7a7f2b20b72afe613e71e",
                 "shasum": ""
             },
             "require": {
@@ -1492,7 +1499,7 @@
                 "php",
                 "thinframe"
             ],
-            "time": "2014-03-09 14:35:20"
+            "time": "2014-03-27 21:27:22"
         },
         {
             "name": "thinframe/monolog",
@@ -1500,12 +1507,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/monolog.git",
-                "reference": "cd6d6c85889bfd5994c609c478cf5056d8e9c8ed"
+                "reference": "438e5c6df5033efa6a8399944eb68cb75c6d8d77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/monolog/zipball/cd6d6c85889bfd5994c609c478cf5056d8e9c8ed",
-                "reference": "cd6d6c85889bfd5994c609c478cf5056d8e9c8ed",
+                "url": "https://api.github.com/repos/thinframe/monolog/zipball/438e5c6df5033efa6a8399944eb68cb75c6d8d77",
+                "reference": "438e5c6df5033efa6a8399944eb68cb75c6d8d77",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1549,7 @@
                 "monolog",
                 "thinframe"
             ],
-            "time": "2014-03-09 14:31:53"
+            "time": "2014-03-27 21:26:51"
         },
         {
             "name": "thinframe/pcntl",
