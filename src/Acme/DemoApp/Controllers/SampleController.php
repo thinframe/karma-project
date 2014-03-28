@@ -9,6 +9,8 @@
 
 namespace Acme\DemoApp\Controllers;
 
+use ThinFrame\Http\Foundation\RequestInterface;
+use ThinFrame\Http\Foundation\ResponseInterface;
 use ThinFrame\Karma\Controller\AbstractController;
 
 /**
@@ -28,7 +30,7 @@ class SampleController extends AbstractController
      *          "requirements":[]
      * }
      */
-    public function indexAction()
+    public function indexAction(RequestInterface $request, ResponseInterface $response)
     {
         return "Hello world";
     }
