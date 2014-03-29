@@ -77,6 +77,7 @@ class DemoApplication extends AbstractApplication
                 '../../../app/config/parameters.yml',
                 '../../../app/config/config.yml',
                 '../../../app/config/config_' . $this->environment . '.yml',
+                'Resources/services/controllers.yml'
             ]
         );
     }

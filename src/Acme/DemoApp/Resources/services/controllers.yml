@@ -1,0 +1,6 @@
+services:
+# SAMPLE CONTROLLER AS A SERVICE
+#    acme.demo_app.controller.sample:
+#        class: 'Acme\DemoApp\Controllers\SampleController'
+#        tags:
+#            - { name: 'karma.controller' }

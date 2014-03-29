@@ -12,6 +12,7 @@ namespace Acme\DemoApp\Controllers;
 use ThinFrame\Http\Foundation\RequestInterface;
 use ThinFrame\Http\Foundation\ResponseInterface;
 use ThinFrame\Karma\Controller\AbstractController;
+use ThinFrame\Karma\Controller\Router;
 
 /**
  * Class DummyController

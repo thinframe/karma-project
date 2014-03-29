@@ -106,12 +106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "a0731ddb5f1d37619d5b50567eb60e585510464b"
+                "reference": "808efeba082e7e7418b62a232f23c9b060a4a308"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a0731ddb5f1d37619d5b50567eb60e585510464b",
-                "reference": "a0731ddb5f1d37619d5b50567eb60e585510464b",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/808efeba082e7e7418b62a232f23c9b060a4a308",
+                "reference": "808efeba082e7e7418b62a232f23c9b060a4a308",
                 "shasum": ""
             },
             "require": {
@@ -157,7 +157,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-03-18 14:37:13"
+            "time": "2014-03-26 20:08:24"
         },
         {
             "name": "guzzle/parser",
@@ -1397,17 +1397,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/inotify.git",
-                "reference": "c079e43a2b4c3d3bb7bab60999f3aa57bdcabba4"
+                "reference": "f271a85e26a7b4b6d554ba9525c56d5f019e69ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/inotify/zipball/c079e43a2b4c3d3bb7bab60999f3aa57bdcabba4",
-                "reference": "c079e43a2b4c3d3bb7bab60999f3aa57bdcabba4",
+                "url": "https://api.github.com/repos/thinframe/inotify/zipball/f271a85e26a7b4b6d554ba9525c56d5f019e69ee",
+                "reference": "f271a85e26a7b4b6d554ba9525c56d5f019e69ee",
                 "shasum": ""
             },
             "require": {
                 "ext-inotify": "@stable",
                 "php": ">=5.4.0",
+                "symfony/finder": "2.5.*",
                 "thinframe/applications": "dev-develop",
                 "thinframe/events": "dev-develop",
                 "thinframe/foundation": "dev-develop"
@@ -1443,7 +1444,7 @@
                 "inotify",
                 "thinframe"
             ],
-            "time": "2014-03-09 18:18:26"
+            "time": "2014-03-28 20:51:16"
         },
         {
             "name": "thinframe/karma",
@@ -1451,12 +1452,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/karma.git",
-                "reference": "836ffec5c4926576a59f6152ada3ca603def1095"
+                "reference": "1f143b6b38f5a4e4627c12750f6c8c0f967d7379"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/karma/zipball/836ffec5c4926576a59f6152ada3ca603def1095",
-                "reference": "836ffec5c4926576a59f6152ada3ca603def1095",
+                "url": "https://api.github.com/repos/thinframe/karma/zipball/1f143b6b38f5a4e4627c12750f6c8c0f967d7379",
+                "reference": "1f143b6b38f5a4e4627c12750f6c8c0f967d7379",
                 "shasum": ""
             },
             "require": {
@@ -1499,7 +1500,7 @@
                 "php",
                 "thinframe"
             ],
-            "time": "2014-03-28 14:30:27"
+            "time": "2014-03-28 17:54:18"
         },
         {
             "name": "thinframe/monolog",
@@ -1507,12 +1508,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/monolog.git",
-                "reference": "438e5c6df5033efa6a8399944eb68cb75c6d8d77"
+                "reference": "65e6c009ebda52df8afb41ca078dee2411278c52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/monolog/zipball/438e5c6df5033efa6a8399944eb68cb75c6d8d77",
-                "reference": "438e5c6df5033efa6a8399944eb68cb75c6d8d77",
+                "url": "https://api.github.com/repos/thinframe/monolog/zipball/65e6c009ebda52df8afb41ca078dee2411278c52",
+                "reference": "65e6c009ebda52df8afb41ca078dee2411278c52",
                 "shasum": ""
             },
             "require": {
@@ -1549,7 +1550,7 @@
                 "monolog",
                 "thinframe"
             ],
-            "time": "2014-03-27 21:26:51"
+            "time": "2014-03-28 17:53:48"
         },
         {
             "name": "thinframe/pcntl",
