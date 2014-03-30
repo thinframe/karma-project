@@ -92,7 +92,7 @@ class DemoApplication extends AbstractApplication
     {
         $metadata->set('controllers', ['Controllers/']);
         $metadata->set('views', 'Views/');
-        $metadata->set('assets', '../../../app/assets/');
+        $metadata->set('web_assets', '../../../app/assets/web/');
         $metadata->set('environment', $this->environment);
     }
 }
