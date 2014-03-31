@@ -1,7 +1,7 @@
 parameters:
     karma.paths.root: .
     karma.paths.logs: '%karma.paths.root%/app/logs/'
-    karma.paths.assets: '%karma.paths.root%/app/assets/'
+    karma.paths.assets: '%karma.paths.root%/app/assets/web/'
 
     karma.monitor: ['%karma.paths.root%/src/','%karma.paths.root%/vendor/','%karma.paths.root%/app/config/']
 
