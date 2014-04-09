@@ -1,6 +1,5 @@
 <?php
 
-use Acme\DemoApp\DemoApplication as Application;
 use ThinFrame\Events\SimpleEvent;
 use ThinFrame\Karma\Events;
 
@@ -17,7 +16,7 @@ getenv('THINFRAME_ROOT') ? getenv('THINFRAME_ROOT') . DIRECTORY_SEPARATOR : __DI
 //load composer autoloader
 require_once KARMA_ROOT . 'vendor/autoload.php';
 
-$karmaApplication = new Application();
+$karmaApplication = new App();
 
 $karmaContainer = $karmaApplication->make()->getContainer();
 

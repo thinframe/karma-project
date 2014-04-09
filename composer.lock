@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "16c69476a74bbcb863c4499d05c87a51",
+    "hash": "b0239a07177adb6f3dd4a0efe0c24954",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -106,12 +106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "808efeba082e7e7418b62a232f23c9b060a4a308"
+                "reference": "f6b790e41c4a870b4ebcd09b2a13840ed2263d1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/808efeba082e7e7418b62a232f23c9b060a4a308",
-                "reference": "808efeba082e7e7418b62a232f23c9b060a4a308",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/f6b790e41c4a870b4ebcd09b2a13840ed2263d1a",
+                "reference": "f6b790e41c4a870b4ebcd09b2a13840ed2263d1a",
                 "shasum": ""
             },
             "require": {
@@ -157,7 +157,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-03-26 20:08:24"
+            "time": "2014-03-31 09:08:37"
         },
         {
             "name": "guzzle/parser",
@@ -256,17 +256,100 @@
             "time": "2014-03-11 08:44:13"
         },
         {
+            "name": "knplabs/gaufrette",
+            "version": "v0.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/Gaufrette.git",
+                "reference": "4663c6605e3c96d4b9affa1c38dc66a4d8e1fedf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/4663c6605e3c96d4b9affa1c38dc66a4d8e1fedf",
+                "reference": "4663c6605e3c96d4b9affa1c38dc66a4d8e1fedf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "amazonwebservices/aws-sdk-for-php": "1.5.*",
+                "aws/aws-sdk-php": "~2",
+                "doctrine/dbal": ">=2.3",
+                "dropbox-php/dropbox-php": "*",
+                "herzult/php-ssh": "*",
+                "microsoft/windowsazure": "dev-master",
+                "mikey179/vfsstream": "~1.2.0",
+                "phpseclib/phpseclib": "dev-master",
+                "phpspec/phpspec": "2.0.*",
+                "phpunit/phpunit": "3.7.*",
+                "rackspace/php-cloudfiles": "*",
+                "rackspace/php-opencloud": "1.6.*"
+            },
+            "suggest": {
+                "amazonwebservices/aws-sdk-for-php": "to use the legacy Amazon S3 adapters",
+                "aws/aws-sdk-php": "to use the Amazon S3 adapter",
+                "doctrine/dbal": "to use the Doctrine DBAL adapter",
+                "dropbox-php/dropbox-php": "to use the Dropbox adapter",
+                "ext-apc": "to use the APC adapter",
+                "ext-curl": "*",
+                "ext-fileinfo": "This extension is used to automatically detect the content-type of a file in the AwsS3, OpenCloud, and AzureBlogStorage adapters",
+                "ext-mbstring": "*",
+                "ext-mongo": "*",
+                "ext-zip": "to use the Zip adapter",
+                "herzult/php-ssh": "to use SFtp adapter",
+                "knplabs/knp-gaufrette-bundle": "to use with Symfony2",
+                "microsoft/windowsazure": "to use Microsoft Azure Blob Storage adapter",
+                "phpseclib/phpseclib": "to user PhpseclibSftp adapter",
+                "rackspace/php-opencloud": "to use Opencloud adapter"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Gaufrette": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "The contributors",
+                    "homepage": "http://github.com/knplabs/Gaufrette/contributors"
+                },
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                }
+            ],
+            "description": "PHP5 library that provides a filesystem abstraction layer",
+            "homepage": "http://knplabs.com",
+            "keywords": [
+                "abstraction",
+                "file",
+                "filesystem",
+                "media"
+            ],
+            "time": "2014-02-24 18:17:33"
+        },
+        {
             "name": "monolog/monolog",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "4cf49e5496857532f4ca4bbb69d1eee591b88234"
+                "reference": "607f20d4f9757e28e762f71d4a89d49f6900c564"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/4cf49e5496857532f4ca4bbb69d1eee591b88234",
-                "reference": "4cf49e5496857532f4ca4bbb69d1eee591b88234",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/607f20d4f9757e28e762f71d4a89d49f6900c564",
+                "reference": "607f20d4f9757e28e762f71d4a89d49f6900c564",
                 "shasum": ""
             },
             "require": {
@@ -321,7 +404,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2014-03-26 11:12:35"
+            "time": "2014-04-08 08:59:38"
         },
         {
             "name": "nikic/php-parser",
@@ -737,12 +820,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "ab9359cbf100259625c756b57c578eea15b3c464"
+                "reference": "abfdf388c2f47c4d4ba721afab7e91f15ffa476f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/ab9359cbf100259625c756b57c578eea15b3c464",
-                "reference": "ab9359cbf100259625c756b57c578eea15b3c464",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/abfdf388c2f47c4d4ba721afab7e91f15ffa476f",
+                "reference": "abfdf388c2f47c4d4ba721afab7e91f15ffa476f",
                 "shasum": ""
             },
             "require": {
@@ -785,7 +868,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-03-19 15:49:37"
+            "time": "2014-04-02 16:54:39"
         },
         {
             "name": "symfony/dependency-injection",
@@ -951,12 +1034,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "181b8bdddfcb0098f6a3b7c51c58c4afba94842a"
+                "reference": "dd45a1af38d20ebe9b6d4015885d861a4577bc29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/181b8bdddfcb0098f6a3b7c51c58c4afba94842a",
-                "reference": "181b8bdddfcb0098f6a3b7c51c58c4afba94842a",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/dd45a1af38d20ebe9b6d4015885d861a4577bc29",
+                "reference": "dd45a1af38d20ebe9b6d4015885d861a4577bc29",
                 "shasum": ""
             },
             "require": {
@@ -1010,7 +1093,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2014-02-11 13:52:21"
+            "time": "2014-04-03 05:23:50"
         },
         {
             "name": "symfony/yaml",
@@ -1122,15 +1205,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/applications.git",
-                "reference": "d18f05868c6fc2445b729d1688d0c595970a8345"
+                "reference": "4ce8048cea385070aaff2a3a156f22805b0cd290"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/applications/zipball/d18f05868c6fc2445b729d1688d0c595970a8345",
-                "reference": "d18f05868c6fc2445b729d1688d0c595970a8345",
+                "url": "https://api.github.com/repos/thinframe/applications/zipball/4ce8048cea385070aaff2a3a156f22805b0cd290",
+                "reference": "4ce8048cea385070aaff2a3a156f22805b0cd290",
                 "shasum": ""
             },
             "require": {
+                "knplabs/gaufrette": "0.1.7",
                 "php": ">=5.4.0",
                 "symfony/config": "2.4.2",
                 "symfony/dependency-injection": "2.4.2",
@@ -1168,7 +1252,7 @@
                 "ecosystem",
                 "thinframe"
             ],
-            "time": "2014-03-27 21:26:16"
+            "time": "2014-04-07 13:42:10"
         },
         {
             "name": "thinframe/command_line",
@@ -1452,12 +1536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/karma.git",
-                "reference": "7bb8aca0643ab9cd9a5a5e85ac9cacabee054e4f"
+                "reference": "84bbb7f1d704cc26cf9eed48b3253bc588e4d14a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/karma/zipball/7bb8aca0643ab9cd9a5a5e85ac9cacabee054e4f",
-                "reference": "7bb8aca0643ab9cd9a5a5e85ac9cacabee054e4f",
+                "url": "https://api.github.com/repos/thinframe/karma/zipball/84bbb7f1d704cc26cf9eed48b3253bc588e4d14a",
+                "reference": "84bbb7f1d704cc26cf9eed48b3253bc588e4d14a",
                 "shasum": ""
             },
             "require": {
@@ -1500,7 +1584,7 @@
                 "php",
                 "thinframe"
             ],
-            "time": "2014-03-29 17:33:02"
+            "time": "2014-03-31 18:01:34"
         },
         {
             "name": "thinframe/monolog",

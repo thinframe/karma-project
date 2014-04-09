@@ -24,28 +24,6 @@ use ThinFrame\Karma\KarmaApplication;
 class DemoApplication extends AbstractApplication
 {
     /**
-     * @var Environment
-     */
-    private $environment;
-
-    /**
-     * {@inheritdoc}
-     */
-    function __construct()
-    {
-        parent::__construct();
-
-        if (getenv('THINFRAME_ENVIRONMENT')) {
-            $this->environment = new Environment(getenv('THINFRAME_ENVIRONMENT'));
-        } else {
-            $this->environment = new Environment(Environment::PRODUCTION);
-        }
-
-        $this->container->setParameter('environment', $this->environment->__toString());
-    }
-
-
-    /**
      * Get application name
      *
      * @return string
@@ -74,9 +52,6 @@ class DemoApplication extends AbstractApplication
     {
         $configurator->addResources(
             [
-                '../../../app/config/parameters.yml',
-                '../../../app/config/config.yml',
-                '../../../app/config/config_' . $this->environment . '.yml',
                 'Resources/services/controllers.yml'
             ]
         );
@@ -93,6 +68,5 @@ class DemoApplication extends AbstractApplication
         $metadata->set('controllers', ['Controllers/']);
         $metadata->set('views', 'Views/');
         $metadata->set('web_assets', 'Resources/assets/web/');
-        $metadata->set('environment', $this->environment);
     }
 }
