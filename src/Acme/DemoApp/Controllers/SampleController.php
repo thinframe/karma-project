@@ -36,7 +36,9 @@ class SampleController extends AbstractController
      */
     public function indexAction(RequestInterface $request, ResponseInterface $response)
     {
-        return [];
+        return [
+            'memory_usage' => memory_get_usage()/1024
+        ];
     }
 
     /**

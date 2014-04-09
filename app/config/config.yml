@@ -6,3 +6,8 @@ monolog:
 server:
     port: 1337
     host: 127.0.0.1
+
+twig:
+    error_pages:
+        - { code: 404, view: 'DemoApplication:not_found.html.twig' }
+        - { code: 500, view: 'DemoApplication:internal_error.html.twig' }
