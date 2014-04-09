@@ -13,6 +13,7 @@ use ThinFrame\Http\Foundation\RequestInterface;
 use ThinFrame\Http\Foundation\ResponseInterface;
 use ThinFrame\Karma\Controller\AbstractController;
 use ThinFrame\Karma\Controller\Router;
+use ThinFrame\Twig\View;
 
 /**
  * Class DummyController
@@ -30,10 +31,12 @@ class SampleController extends AbstractController
      *          "default":[],
      *          "requirements":[]
      * }
+     *
+     * @View {"type":"Twig","template":"DemoApplication:default.html.twig"}
      */
     public function indexAction(RequestInterface $request, ResponseInterface $response)
     {
-        return "Hello world";
+        return [];
     }
 
     /**

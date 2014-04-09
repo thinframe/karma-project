@@ -14,6 +14,7 @@ use ThinFrame\Applications\AbstractApplication;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 use ThinFrame\Karma\Environment;
 use ThinFrame\Karma\KarmaApplication;
+use ThinFrame\Twig\TwigApplication;
 
 /**
  * Class DemoApp
@@ -40,7 +41,10 @@ class DemoApplication extends AbstractApplication
      */
     public function getParents()
     {
-        return [new KarmaApplication()];
+        return [
+            new KarmaApplication(),
+            new TwigApplication()
+        ];
     }
 
     /**

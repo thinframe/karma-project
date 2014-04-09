@@ -3,7 +3,7 @@
 namespace ThinFrame\Profiler\Controllers;
 
 use ThinFrame\Karma\ViewController\AbstractController;
-use ThinFrame\Twig\TwigView;
+use ThinFrame\Twig\View;
 
 /**
  * Class ProfilerController
@@ -18,7 +18,7 @@ class ProfilerController extends AbstractController
      */
     public function indexAction()
     {
-        return new TwigView('KarmaProfiler:default.html.twig');
+        return new View('KarmaProfiler:default.html.twig');
     }
 
     /**
