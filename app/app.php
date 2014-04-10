@@ -48,7 +48,8 @@ class App extends AbstractApplication
     public function getParents()
     {
         return [
-            new Acme\DemoApp\DemoApplication()
+            new Acme\DemoApp\DemoApplication(),
+            new \ThinFrame\Profiler\ProfilerApplication()
         ];
     }
 

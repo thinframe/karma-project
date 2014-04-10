@@ -1452,12 +1452,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/karma.git",
-                "reference": "18f95f8dca76519902a40f51480124e1896819b6"
+                "reference": "57001c2b64d690a336af7c12570a7ee273f660bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/karma/zipball/18f95f8dca76519902a40f51480124e1896819b6",
-                "reference": "18f95f8dca76519902a40f51480124e1896819b6",
+                "url": "https://api.github.com/repos/thinframe/karma/zipball/57001c2b64d690a336af7c12570a7ee273f660bd",
+                "reference": "57001c2b64d690a336af7c12570a7ee273f660bd",
                 "shasum": ""
             },
             "require": {
@@ -1501,7 +1501,7 @@
                 "php",
                 "thinframe"
             ],
-            "time": "2014-04-09 17:31:07"
+            "time": "2014-04-09 18:57:39"
         },
         {
             "name": "thinframe/monolog",
@@ -1665,12 +1665,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thinframe/twig-application.git",
-                "reference": "ea94ac2b257d8ef6c84ec4ed75b52f6592bf1473"
+                "reference": "a758a4107897566ec088f6a03a8cac8e3fa9f025"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thinframe/twig-application/zipball/ea94ac2b257d8ef6c84ec4ed75b52f6592bf1473",
-                "reference": "ea94ac2b257d8ef6c84ec4ed75b52f6592bf1473",
+                "url": "https://api.github.com/repos/thinframe/twig-application/zipball/a758a4107897566ec088f6a03a8cac8e3fa9f025",
+                "reference": "a758a4107897566ec088f6a03a8cac8e3fa9f025",
                 "shasum": ""
             },
             "require": {
@@ -1702,7 +1702,7 @@
                 "thinframe",
                 "twig"
             ],
-            "time": "2014-04-09 13:03:24"
+            "time": "2014-04-09 18:54:35"
         },
         {
             "name": "twig/twig",
