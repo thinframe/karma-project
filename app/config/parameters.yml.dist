@@ -1,8 +1,12 @@
 parameters:
-
     karma.paths.root: .
     karma.paths.logs: '%karma.paths.root%/app/logs/'
-    karma.paths.assets: '%karma.paths.root%/app/assets/'
+    karma.paths.assets: '%karma.paths.root%/app/assets/web/'
+
+    karma.monitor: ['%karma.paths.root%/src/','%karma.paths.root%/vendor/','%karma.paths.root%/app/config/']
 
     thinframe.server.port: 1337
-    thinframe.server.host: '127.0.0.1'
+    thinframe.server.host: 127.0.0.1
+
+    thinframe.server.output_file: '%karma.paths.logs%/server_output.log'
+    thinframe.server.error_file: 'karma.paths.logs%/server_error.log'

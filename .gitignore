@@ -5,4 +5,6 @@
 /bin/*
 app/config/parameters.yml
 app/cache/
+app/assets/web/*
+!app/assets/web/.gitkeep
 *.sandbox.php

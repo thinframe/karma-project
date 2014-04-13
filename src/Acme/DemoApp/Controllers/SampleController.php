@@ -9,9 +9,11 @@
 
 namespace Acme\DemoApp\Controllers;
 
-use ThinFrame\Karma\ViewController\AbstractController;
-use ThinFrame\Karma\ViewController\JsonView;
-use ThinFrame\Twig\TwigView;
+use ThinFrame\Http\Foundation\RequestInterface;
+use ThinFrame\Http\Foundation\ResponseInterface;
+use ThinFrame\Karma\Controller\AbstractController;
+use ThinFrame\Karma\Controller\Router;
+use ThinFrame\Twig\View;
 
 /**
  * Class DummyController
@@ -24,36 +26,29 @@ class SampleController extends AbstractController
 {
     /**
      * @Route {
-     *          "names":"homePage",
+     *          "name":"homePage",
      *          "path":"/",
      *          "default":[],
-     *          "requirements":[],
-     *          "options":[],
-     *          "host":"",
-     *          "schemes":[],
-     *          "methods":[]
+     *          "requirements":[]
      * }
+     *
+     * @View {"type":"Twig","template":"DemoApplication:default.html.twig"}
      */
-    public function indexAction()
+    public function indexAction(RequestInterface $request, ResponseInterface $response)
     {
-        return new TwigView('AcmeDemoApp:default.html.twig', [
-            'controller_location' => __FILE__,
-            'controller_action'   => __FUNCTION__,
-            'path'                => $this->request->getPath(),
-            'remote_ip'           => $this->request->getRemoteIp(),
-            'memory_usage'        => memory_get_usage() / 1024,
-            'real_memory_usage'   => memory_get_usage(true) / 1024
-        ]);
+        return [
+            'memory_usage' => memory_get_usage()/1024
+        ];
     }
 
     /**
      * @Route {
-     *          "names":"contactPage",
-     *          "path":"contact"
+     *          "name":"contactPage",
+     *          "path":"contact/{email}"
      * }
      */
-    public function contactAction()
+    public function contactAction($email)
     {
-        return "Send me an email at sorin.badea91@gmail.com";
+        return "Send me an email at " . $email;
     }
 }

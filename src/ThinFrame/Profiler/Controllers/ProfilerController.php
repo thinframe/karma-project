@@ -2,8 +2,9 @@
 
 namespace ThinFrame\Profiler\Controllers;
 
-use ThinFrame\Karma\ViewController\AbstractController;
-use ThinFrame\Twig\TwigView;
+use ThinFrame\Karma\Controller\AbstractController;
+use ThinFrame\Twig\View;
+
 
 /**
  * Class ProfilerController
@@ -14,15 +15,15 @@ use ThinFrame\Twig\TwigView;
 class ProfilerController extends AbstractController
 {
     /**
-     * @Route {"path":"_profiler"}
+     * @Route {"path":"_profiler","name":"profilerIndex"}
      */
     public function indexAction()
     {
-        return new TwigView('KarmaProfiler:default.html.twig');
+        return new View('Profiler:default.html.twig');
     }
 
     /**
-     * @Route {"path":"_profiler/memory"}
+     * @Route {"path":"_profiler/memory","name":"profilerStats"}
      */
     public function memoryAction()
     {

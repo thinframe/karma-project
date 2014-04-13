@@ -2,6 +2,7 @@
 
 namespace ThinFrame\Profiler;
 
+use PhpCollection\Map;
 use ThinFrame\Applications\AbstractApplication;
 use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 
@@ -14,57 +15,44 @@ use ThinFrame\Applications\DependencyInjection\ContainerConfigurator;
 class ProfilerApplication extends AbstractApplication
 {
     /**
-     * Get parent applications
-     *
-     * @return AbstractApplication[]
-     */
-    protected function getParentApplications()
-    {
-        return [];
-    }
-
-    /**
-     * initialize configurator
-     *
-     * @param ContainerConfigurator $configurator
-     *
-     * @return mixed
-     */
-    public function initializeConfigurator(ContainerConfigurator $configurator)
-    {
-        //noop
-    }
-
-    /**
-     * Get configuration files
-     *
-     * @return mixed
-     */
-    public function getConfigurationFiles()
-    {
-        return [];
-    }
-
-    /**
      * Get application name
      *
      * @return string
      */
-    public function getApplicationName()
+    public function getName()
     {
-        return 'KarmaProfiler';
+        return 'Profiler';
     }
 
     /**
-     * Application metadata
+     * Get application parents
      *
-     * @return array
+     * @return AbstractApplication[]
      */
-    protected function metaData()
+    public function getParents()
     {
-        return [
-            'controllers' => ['Controllers/'],
-            'views'       => 'Views/',
-        ];
+        return [];
+    }
+
+    /**
+     * Set different options for the container configurator
+     *
+     * @param ContainerConfigurator $configurator
+     */
+    protected function setConfiguration(ContainerConfigurator $configurator)
+    {
+        // noop
+    }
+
+    /**
+     * Set application metadata
+     *
+     * @param Map $metadata
+     *
+     */
+    protected function setMetadata(Map $metadata)
+    {
+        $metadata->set('controllers', ['Controllers/']);
+        $metadata->set('views', 'Views/');
     }
 }

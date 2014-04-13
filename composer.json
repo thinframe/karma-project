@@ -4,9 +4,9 @@
     "description": "ThinFrame Karma sample project",
     "require": {
         "php": ">=5.4.0",
-        "thinframe/karma": "dev-master",
-        "thinframe/twig-application": "dev-master",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "thinframe/karma": "dev-develop",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "thinframe/twig-application": "dev-develop"
     },
     "license": "MIT",
     "authors": [
@@ -19,7 +19,8 @@
     "autoload": {
         "psr-0": {
             "": "src/"
-        }
+        },
+        "files": ["app/app.php"]
     },
     "config": {
         "bin-dir": "bin"

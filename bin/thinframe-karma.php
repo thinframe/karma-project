@@ -1,6 +1,7 @@
 <?php
 
-use Acme\DemoApp\DemoApplication as Application;
+use ThinFrame\Events\SimpleEvent;
+use ThinFrame\Karma\Events;
 
 declare(ticks = 1);
 
@@ -15,21 +16,17 @@ getenv('THINFRAME_ROOT') ? getenv('THINFRAME_ROOT') . DIRECTORY_SEPARATOR : __DI
 //load composer autoloader
 require_once KARMA_ROOT . 'vendor/autoload.php';
 
-$karmaApplication = new Application();
+$karmaApplication = new App();
 
-$karmaContainer = $karmaApplication->getApplicationContainer();
+$karmaContainer = $karmaApplication->make()->getContainer();
 
-if (getenv('THINFRAME_ENVIRONMENT')) {
-    $environment = $karmaContainer->get('thinframe.karma.environment');
-    /** @var $environment \ThinFrame\Karma\Constants\Environment */
-    $environment->setValue(getenv('THINFRAME_ENVIRONMENT'));
-}
-
-
-$dispatcher = $karmaContainer->get('thinframe.events.dispatcher');
+$dispatcher = $karmaContainer->get('events.dispatcher');
 /** @var $dispatcher \ThinFrame\Events\Dispatcher */
 
 $dispatcher->trigger(
-    new \ThinFrame\Events\SimpleEvent(
-        \ThinFrame\Karma\KarmaApplication::POWER_UP_EVENT_ID, ['application' => $karmaApplication])
+    new SimpleEvent(
+        Events::POWER_UP,
+        [
+            'application' => $karmaApplication
+        ])
 );

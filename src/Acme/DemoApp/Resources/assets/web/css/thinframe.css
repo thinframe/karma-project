@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+body{
+
+    background-color: #1eb999;
+    font-family: 'PT Sans', sans-serif;
+}
+header{
+    background-color: #f5f5f5;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+header #logo{
+	background: url("../images/logo.gif") no-repeat;
+    background-size: 624px 200px ;
+    height: 200px;
+    width: 624px;
+    margin: 0 auto
+}
+header h1{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 35px;
+    color:#0b8c7b;
+    font-weight: 300;
+}
+section#mainContent{
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+section#mainContent h2{
+    color:#f5f5f5;
+    font-size: 30px;
+    margin:50px auto;
+    text-align: center;
+}
+@media screen and (max-width: 500px) {
+    header #logo{
+        background-size: 250px 80px ;
+        height: 80px;
+        width: 250px;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    section#mainContent p{
+        width: 80%;
+        text-align: left;
+    }
+
+}
